@@ -166,7 +166,7 @@
 										<h6 class="darker mb-md-1">Students</h6>
 									</a>
 									<a href="{{ site.baseurl }}/#projects" class="media d-flex align-items-center">
-										<h6 class="darker mb-md-1">Student Projects</h6>
+										<h6 class="darker mb-md-1">Blog Posts</h6>
 									</a>
 									<a href="{{ site.baseurl }}/#mentors" class="media d-flex align-items-center">
 										<h6 class="darker mb-md-1">Mentors</h6>
@@ -368,7 +368,7 @@
         <div class="container" id="projects">
             <div class="row justify-content-center text-center mb-lg">
                 <div class="col-lg-8">
-                    <h2 class="lang" key="projects" class="display-3">Student Projects</h2>
+                    <h2 class="lang" class="display-3">Blog Posts</h2>
                 </div>
             </div>
             <div class="row">
@@ -586,6 +586,35 @@
 					</div>
 				</div>
 			</section>
+	<section class="section section-lg">
+		<div class="container" id="videos">
+            <div class="row justify-content-center text-center mb-lg">
+                <div class="col-lg-8">
+                    <h2 class="lang" key="videos" class="display-3">Videos</h2>
+                </div>
+				<div class="row justify-content-center">
+					{% for video in site.data.videos %}
+					<div class="col-md-3">
+					<a href="{{video.url}}" target="_blank">
+						<div class="image-tile outer-title text-center">
+							<div class="content">
+								<img src="img/video/{{video.img}}" height="240" width="240">
+								<div class="title mb16">
+									<h5 class="uppercase mb0">
+										<div class="blogorvideotitle">{{video.title}}</div>
+									</h5>
+									<span>
+										<div class="nameofauthor">{{video.author_name}}</div>
+									</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					</div>
+				</div>
+            </div>
+		</div>
+	</section>
 			<section class="section section-lg">
 				<div class="container" id="mentors">
 					<div class="row justify-content-center text-center mb-lg">
